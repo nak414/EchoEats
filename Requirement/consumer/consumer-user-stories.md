@@ -43,6 +43,7 @@ The consumer can select a quantity up to the available amount and tap "Reserve".
 The reservation price is locked at the price shown when the consumer taps "Reserve", even if the dynamic price changes afterwards.
 The reserved quantity is held for the consumer for 10 minutes while they complete payment, and a countdown timer is shown.
 If payment is not completed within the hold time, the reservation is cancelled and the quantity is returned to the listing.
+##if listing expires during the hold time, the reservating is cancelled and the quantity is removed from the listing. 
 The consumer cannot reserve more than the available quantity, and two consumers cannot reserve the same last item.
 The consumer can view their active and past reservations in "My Reservations".
 US-C06 – Payment and Pickup Information
