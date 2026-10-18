@@ -1,1 +1,140 @@
+•	Vendor User Stories
+
+1.	US-V01: Vendor Registration and Login
+-	User Story: As a vendor, I want to register for an account and securely log in, so that I can access and manage my surplus food listings and orders.
+-	Acceptance Criteria:
+	The system allows vendors to register by providing the required business details and contact information.
+	The system validates the registration details and prevents registration if required fields are missing or invalid.
+	The system allows registered vendors to log in using their credentials.
+	The system displays an error message when registration or login fails.
+	Vendor account credentials are stored securely.
+
+2.	US-V02: Creating Surplus Food Listings
+-	User Story: As a vendor, I want to create food listings with the item’s name, description, category, quantity, price, expiration and collection deadline, so that customers can view and reserve available surplus food.
+-	Acceptance Criteria:
+	The system allows vendors to create a listing by entering the food item’s name, description, category, quantity, initial price, minimum, expiration date and time, and collection deadline.
+	The system requires all mandatory fields to be completed before a listing is created.
+	The system validates that the quantity and initial selling price is greater than 0.
+	The system ensures that the collection deadline does not exceed the food’s expiration time.
+	The system displays successfully created listings to customers while the food is available for reservation.
+
+3.	US-V03: Editing Listings and Managing Quantities
+-	User Story: As a vendor, I want to edit my food listings and update their available quantities, and have listings automatically marked as unavailable passed their collection deadline, so that customers see accurate information and are not able to reserve food that is no longer available.
+-	Acceptance Criteria:
+	The system allows vendors to edit the details of their existing food listings.
+	The system allows vendors to update the available quantity of a listing.
+	The system prevents the available quantity to be set to negative value.
+	The system automatically marks listings as unavailable once their collection deadline has passed.
+	The system prevents customers from reserving listings that are unavailable or have 0 remaining quantity.
+
+4.	US-V04: Setting Initial and Minimum Selling Prices
+-	User Story: As a vendor, I want to set an initial price and a minimum price for each listing, so that I can control the starting price and set a lowest price the system can apply
+-	Acceptance Criteria:
+	The system allows vendors to set an initial selling price for each food listing.
+	The system allows vendors to set a minimum selling price for each food listing.
+	The system ensures that both prices are greater than 0
+	The system ensures that the minimum selling price does not exceed the initial selling price.
+	The system stores the vendor’s prices and makes them available to the dynamic pricing system.
+
+5.	US-V05: Automatic Price Reductions as Expiration Approaches
+-	User Story: As a vendor, I want to have the prices automatically reduced as the collection deadline approaches (without going below my set minimum price), so that customers are encouraged to purchase the surplus food before it expires.
+-	Acceptance Criteria:
+	The system automatically reduces the selling prices according to a predefined discount schedule as the collection deadline approaches.
+	The system calculates the discounted price based on the listing’s initial selling price.
+	The system ensures that the selling price never falls below the vendors specified minimum selling price.
+	The system updates the displayed selling price whenever a new discount is applied.
+	The system stops applying price reductions when the minimum price is reached or the listing becomes unavailable.
+	The system adjusts price reductions based on customer demand, with slower reductions when demand is high and faster reductions when demand is low.
+
+6.	US-V06: Managing Reservations and Pickups
+-	User Story: As a vendor, I want to view and manage customer reservations, track their status, and confirm pickups, so that I can prepare orders and keep track of collected food.
+-	Acceptance Criteria:
+	The system allows vendors to view customer reservations, including the reserved items, quantities and collection times.
+	The system allows vendors to track reservation status, including confirmed, collected, and cancelled.
+	The system updates the available quantity when a reservation is created or cancelled, including when the 10-minute reservation hold expires.
+	The system allows the vendor to confirm when a customer collects their reserved food.
+	The system prevents vendors from confirming a pickup for a cancelled reservation.
+
+•	Vendor Functional Requirements
+V-FR01 Vendor Account Management
+ID	Requirement 
+FR-V01	The system shall allow vendors to register using their business details and contact information.
+FR-V02	The system shall allow registered vendors to log in and out securely.
+FR-V03	The system shall allow vendors to view and update their account information.
+
+V-FR02 Creating Food Listings
+ID	Requirement 
+FR-V04	The system shall allow vendors to create food listings containing the food name, description, category, photos, available quantity, initial selling price, expiration date and time, collection deadline.
+FR-V05	The system shall validate required listing information before creating the listing.
+FR-V06	The system shall ensure that the collection deadline does not exceed the food’s expiration time
+FR-V07	The system shall display published listings to customers while they remain available
+
+V-FR03 Editing and Removing Listings
+ID	Requirement 
+FR-V08	The system shall allow vendors to edit existing listing details, including description, photos, quantities, and collection information.
+FR-V09	The system shall allow vendors to remove or deactivate listings that are no longer available
+FR-V10	The system shall prevent new reservations for removed or deactivated listings
+FR-V11	The system shall retain relevant reservation and transaction records after a listing is removed.
+
+V-FR04 Price Management
+ID	Requirement 
+FR-V12	The system shall allow vendors to set an initial and minimum selling price for each listing.
+FR-V13	The system shall ensure the minimum selling price is less than the initial selling price, and is greater than 0.
+FR-V14	The system shall automatically adjust discounts based on the time remaining before the collection deadline and customer demand. 
+FR-V15 	The system shall ensure that automatic price reductions never drop the price below the vendor’s set minimum price
+FR-V16	The system shall display the current selling price to customers.
+
+V-FR05 Food Inventory Management
+ID	Requirement 
+FR-V17	The system shall allow vendors to view and update the available quantity of each listing.
+FR-V18	The system shall automatically update available quantities when reservations are created, cancelled, or expire after the 10 minute hold.
+FR-V19	The system shall prevent available quantities from becoming negative
+FR-V20	The system shall mark listings with zero available quantity as unavailable for reservation
+
+V-FR06 Reservation management
+ID	Requirement 
+FR-V21	The system shall allow vendors to view reservations, including reserved items, quantities, collection times and reservation status
+FR-V22	The system shall allow vendors to track reservations through confirmation, collection and cancellation.
+FR-V23	The system shall allow vendors to confirm successful food pickups
+FR-V24	The system shall prevent vendors from confirming pickups for cancelled reservations
+
+V-FR07 Double Booking and Expired Listings
+ID	Requirement 
+FR-V25	The system shall prevent customers from reserving quantities greater than available
+FR-V26	The system shall verify inventory availability when a reservation is submitted and ensure that simultaneous reservations cannot allocate the same items more than once
+FR-V27	The system shall automatically mark listings as unavailable after their collection deadline
+FR-V28	The system shall prevent reservations for expired or unavailable listings
+FR-V29	The system shall release reserved inventory when a reservation is cancelled, provided the listing is still valid.
+
+V-FR08 Payment and Vendor Payout
+ID	Requirement 
+FR-V30	The system shall allow customers to pay for temporary reservations through supported payment methods within the 10 minute hold.
+FR-V31	The system shall record payment status for each reservation
+FR-V32	The system shall provide vendors with a record of completed sales and earnings 
+FR-V33	The system shall calculate vendor earnings after applying applicable platform fees
+FR-V34	The system shall track payout amounts and statuses for vendors
+FR-V35	The system shall prevent payouts for transactions that have not met the platforms payout conditions
+
+3. Dynamic Pricing Requirements
+•	Prices automatically decrease as expiration approaches.
+The system shall automatically reduce the selling price of surplus food as its expiration time approaches (without falling below the set minimum price). The purpose is to encourage customers to buy available food before it expires and goes to waste.
+•	Demand affects the speed of price reductions.
+•	High demand can slow price reductions.
+•	Low demand can accelerate price reductions.
+The system shall consider customer demand when the speed at which the price is reduced. At high demand the system will slow down price reductions to preserve profits, whereas when the available food is lacking in demand the system will accelerate price reductions to encourage purchases.
+
+•	Vendors can set a minimum acceptable price.
+The system shall allow vendors to set a specific minimum price for each food listing. The price engine shall never reduce the price below this minimum, regardless of time remaining or demand. Once the minimum price is reached, further price reductions halt. 
+•	Linear, exponential, and stepped pricing curves are supported.
+The system shall support three pricing approaches:
+-	Linear pricing: the price decreases at a steady rate over time.
+-	Exponential pricing: the price decreases slowly at first and then rapidly decreases as time passes.
+-	Stepped pricing: the price decreases by predefined amounts or percentages at specific time intervals.
+•	Prices are intended to update approximately every 15–30 minutes.
+The system shall recalculate prices approximately every 15-30 minutes while a listing remains available. When a new price is calculated, the system shall update the price displayed to customers unless its below the minimum. The system shall stop updating prices when the listing becomes unavailable or reaches the minimum. 
+Briefly explain the proposed pricing formula:
+Price(t) = BasePrice × DecayFunction(timeRemaining) × DemandMultiplier
+The “DecayFunction(timeRemaining)” is responsible for determining how the price changes over time, while the “DemandMultiplier” adjusts the effect of these reductions. Higher demand will slow down price reductions, whereas low demand will speed them up. 
+The calculated selling price shall never fall below the vendors set minimum selling price. The exact decay function, demand threshold, and multipliers shall be defined during system design and testing.
+Focus on defining how the system should work. You do not need to program the pricing algorithm.
 
