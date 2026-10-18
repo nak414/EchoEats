@@ -116,14 +116,14 @@ FR-V34	The system shall track payout amounts and statuses for vendors
 FR-V35	The system shall prevent payouts for transactions that have not met the platforms payout conditions
 
 3. Dynamic Pricing Requirements
-•	Prices automatically decrease as expiration approaches.
+•	Prices automatically decrease as expiration approaches
 The system shall automatically reduce the selling price of surplus food as its expiration time approaches (without falling below the set minimum price). The purpose is to encourage customers to buy available food before it expires and goes to waste.
 •	Demand affects the speed of price reductions.
 •	High demand can slow price reductions.
 •	Low demand can accelerate price reductions.
 The system shall consider customer demand when the speed at which the price is reduced. At high demand the system will slow down price reductions to preserve profits, whereas when the available food is lacking in demand the system will accelerate price reductions to encourage purchases.
 
-•	Vendors can set a minimum acceptable price.
+•	Vendors can set a minimum acceptable price
 The system shall allow vendors to set a specific minimum price for each food listing. The price engine shall never reduce the price below this minimum, regardless of time remaining or demand. Once the minimum price is reached, further price reductions halt. 
 •	Linear, exponential, and stepped pricing curves are supported.
 The system shall support three pricing approaches:
@@ -137,4 +137,3 @@ Price(t) = BasePrice × DecayFunction(timeRemaining) × DemandMultiplier
 The “DecayFunction(timeRemaining)” is responsible for determining how the price changes over time, while the “DemandMultiplier” adjusts the effect of these reductions. Higher demand will slow down price reductions, whereas low demand will speed them up. 
 The calculated selling price shall never fall below the vendors set minimum selling price. The exact decay function, demand threshold, and multipliers shall be defined during system design and testing.
 Focus on defining how the system should work. You do not need to program the pricing algorithm.
-
