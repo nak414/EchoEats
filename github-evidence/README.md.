@@ -1,0 +1,19 @@
+# EchoEats: GitHub Collaboration Evidence (Sprint 2)
+
+**Repository:** https://github.com/nak414/EchoEats
+**Collected by:** Jude (Person 3)
+
+## Contribution Evidence
+
+| Person | Contribution | Commit Link | Pull Request / Review Link |
+|---|---|---|---|
+| Person 1: Noora | Scrum documentation | [Commit 463a397](https://github.com/nak414/EchoEats/commit/463a397) | [Comment on PR #7](https://github.com/nak414/EchoEats/pull/7#issuecomment-6960405240) |
+| Person 2: Naeema | Architecture analysis and component diagram | [Commit 357c086](https://github.com/nak414/EchoEats/commit/357c086) | [PR #1](https://github.com/nak414/EchoEats/pull/1) · [Comment on PR #6](https://github.com/nak414/EchoEats/pull/6#issuecomment-6959380835) |
+| Person 3: Jude | Class diagram and GitHub evidence | [Commit 7707314](https://github.com/nak414/EchoEats/commit/7707314) | [PR #6](https://github.com/nak414/EchoEats/pull/6) · [Review on PR #4](https://github.com/nak414/EchoEats/pull/4#pullrequestreview-5944690900) |
+| Person 4: Abdulla | Sequence diagram and ethics | [Commit c91ebc4](https://github.com/nak414/EchoEats/commit/c91ebc4) · [Commit cc337da](https://github.com/nak414/EchoEats/commit/cc337da) | [PR #5](https://github.com/nak414/EchoEats/pull/5) |
+| Person 5: Mariam | Wireframes and user flow | [Commit a74c3cc](https://github.com/nak414/EchoEats/commit/a74c3cc) | [PR #7](https://github.com/nak414/EchoEats/pull/7) |
+| Person 6: Salman | Pricing, inventory and next-phase design | [Commit 943a6fb](https://github.com/nak414/EchoEats/commit/943a6fb) · [Commit e9d1ff1](https://github.com/nak414/EchoEats/commit/e9d1ff1) · [Commit 9f2d2e2](https://github.com/nak414/EchoEats/commit/9f2d2e2) · [Commit c873fc5](https://github.com/nak414/EchoEats/commit/c873fc5) | [PR #2](https://github.com/nak414/EchoEats/pull/2) · [Comment on PR #3](https://github.com/nak414/EchoEats/pull/3#discussion_r4603636970) |
+
+## How GitHub Was Used
+
+The team continued working in the Phase 1 EchoEats GitHub repository for Sprint 2. Each of the six members contributed from their own GitHub account and worked on a separate feature branch named after their deliverable (for example `sprint2/class-diagram`), so work could proceed in parallel without overwriting anyone else's files. Members committed regularly during the sprint with descriptive messages, which gives a dated version history of each design document and lets earlier versions be restored if needed. When a deliverable was ready, its owner opened a pull request into `main`. Other members reviewed the pull requests and left comments on correctness, consistency with the Phase 1 requirements and alignment with the other diagrams. Changes were merged after review. This workflow gave version control, peer review and a traceable record of each member's contribution, and the links in the table above point to that evidence.
