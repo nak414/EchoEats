@@ -1,0 +1,41 @@
+@startuml
+title EchoEats - Dynamic Pricing Activity Diagram
+
+start
+:Read initial price, minimum price, remaining time, and customer demand;
+:Calculate pricing progress;
+
+switch (Select pricing method?)
+case (Linear)
+  :Use progress unchanged;
+case (Exponential)
+  :Raise progress to power 2.2;
+case (Stepped)
+  :Divide progress into four stages;
+endswitch
+
+:Calculate demand ratio;
+
+if (Demand ratio >= 0.50?) then (High demand)
+  :Set demand factor to 0.65;
+else (Not high)
+  if (Demand ratio < 0.15?) then (Low demand)
+    :Set demand factor to 1.10;
+  else (Normal demand)
+    :Set demand factor to 0.90;
+  endif
+endif
+
+:Calculate proposed discounted price;
+:Limit maximum discount to 85%;
+:Apply minimum and maximum price limits;
+
+if (Price has changed?) then (Yes)
+  :Update current selling price;
+else (No)
+  :Keep current selling price;
+endif
+
+:Produce final selling price;
+stop
+@enduml
