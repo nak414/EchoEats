@@ -36,7 +36,7 @@ FR-C21	The system shall never display a current price lower than the vendor's mi
 ID	Requirement
 FR-C22	The system shall allow a consumer to reserve a quantity of an item that is no greater than the currently available quantity.
 FR-C23	The system shall lock the reservation price when the temporary reservation is created, even if the dynamic price changes before payment is completed.
-FR-C24	The system shall hold the reserved quantity for 10 minutes pending payment and display a countdown timer to the consumer.
+FR-C24	The system shall hold the reserved quantity for 15 minutes pending payment and display a countdown timer to the consumer.
 FR-C25	The system shall automatically cancel unpaid reservations when the hold expires and return the quantity to the listing.
 FR-C26	The system shall reduce the listing's available quantity immediately when a reservation is created, so the same unit cannot be reserved by two consumers.
 FR-C27	The system shall allow a consumer to view their active, completed and cancelled reservations.
