@@ -51,7 +51,7 @@
 -	Acceptance Criteria:
 	The system allows vendors to view customer reservations, including the reserved items, quantities and collection times.
 	The system allows vendors to track reservation status, including confirmed, collected, and cancelled.
-	The system updates the available quantity when a reservation is created or cancelled, including when the 10-minute reservation hold expires.
+	The system updates the available quantity when a reservation is created or cancelled, including when the 15-minute reservation hold expires.
 	The system allows the vendor to confirm when a customer collects their reserved food.
 	The system prevents vendors from confirming a pickup for a cancelled reservation.
 
@@ -87,7 +87,7 @@ FR-V16	The system shall display the current selling price to customers.
 V-FR05 Food Inventory Management
 ID	Requirement 
 FR-V17	The system shall allow vendors to view and update the available quantity of each listing.
-FR-V18	The system shall automatically update available quantities when reservations are created, cancelled, or expire after the 10 minute hold.
+FR-V18	The system shall automatically update available quantities when reservations are created, cancelled, or expire after the 15 minute hold.
 FR-V19	The system shall prevent available quantities from becoming negative
 FR-V20	The system shall mark listings with zero available quantity as unavailable for reservation
 
@@ -108,7 +108,7 @@ FR-V29	The system shall release reserved inventory when a reservation is cancell
 
 V-FR08 Payment and Vendor Payout
 ID	Requirement 
-FR-V30	The system shall allow customers to pay for temporary reservations through supported payment methods within the 10 minute hold.
+FR-V30	The system shall allow customers to pay for temporary reservations through supported payment methods within the 15 minute hold.
 FR-V31	The system shall record payment status for each reservation
 FR-V32	The system shall provide vendors with a record of completed sales and earnings 
 FR-V33	The system shall calculate vendor earnings after applying applicable platform fees
