@@ -5,7 +5,7 @@
 | Checkpoint | Date | To Do | In Progress | In Review | Done | Total Tasks |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Beginning of Sprint** | November 3, 2026 | 18 | 0 | 0 | 0 | 18 |
-| **Middle of Sprint** | November 10, 2026 | 7 | 5 | 2 | 4 | 18 |
+| **Middle of Sprint** | November 10, 2026 | 4 | 3 | 2 | 9 | 18 |
 | **End of Sprint** | November 17, 2026 | 0 | 0 | 0 | 18 | 18 |
 
 ---
@@ -17,7 +17,7 @@
 * **Screenshot File:** `jira-board-beginning.png`
 
 ### 2. Middle Checkpoint (November 10, 2026)
-* **Board Status:** Work was actively underway across all columns—4 tasks completed (**Done**), 2 drafts submitted for peer feedback (**In Review**), 5 tasks actively being worked on (**In Progress**), and 7 remaining tasks queued (**To Do**).
+* **Board Status:** Work was actively underway across all columns—9 tasks completed (Done), 2 drafts submitted for peer feedback (In Review), 3 tasks actively being worked on (In Progress), and 4 remaining tasks queued (To Do).
 * **Screenshot File:** `jira-board-middle.png`
 
 ### 3. End Checkpoint (November 17, 2026)
