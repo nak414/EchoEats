@@ -51,7 +51,7 @@
 * **Attendees:** Naeema, Noora, Jude, Salman, Abdulla, Mariam
 * **Progress:** We reviewed everyone's work. Jude and Salman were finishing their requirements, Abdulla and Mariam were improving their designs, and Noora was organizing GitHub and the report. Naeema checked the remaining tasks and asked which sections still needed corrections.
 * **Blockers:** Jude's and Salman's reservation and payment requirements still needed clarification, especially how long food orders should remain reserved before payment.
-* **Decision:** We initially agreed on a 10-minute reservation hold for the quantity and price, with orders confirmed only after successful payment. We also agreed to use the extra time to review the requirements and designs before submission.
+* **Decision:** We confirmed the 15-minute reservation hold for the quantity and price (as agreed on November 10), with orders confirmed only after successful payment. We also agreed to use the extra time to review the requirements and designs before submission.
 * **Action Items:** Jude and Salman would finish checking their reservation requirements, Abdulla and Mariam would check that their designs matched, and Naeema would follow up on progress.
 
 ## 7. Meeting 7
