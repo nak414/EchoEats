@@ -1,7 +1,7 @@
 # Sprint 2 Stand-Up Meeting Records
 
 ## 1. Meeting 1
-* **Date:** November 4, 2026
+* **Date:** November 3, 2026
 * **Time:** 12:20 PM to 1:20 PM
 * **Attendees:** Naeema, Noora, Jude, Salman, Abdulla, Mariam
 * **Progress:** Naeema started by asking everyone if they understood the tasks agreed upon during our November 3 Sprint Planning meeting. We went over the planned tasks and everyone's responsibilities. Jude started with class diagram attributes, Salman on dynamic pricing rules, Abdulla on the architecture sequence flow, and Mariam on the UI wireframe layouts.
@@ -10,7 +10,7 @@
 * **Action Items:** Noora would help everyone with GitHub, and Naeema would follow up on task progress.
 
 ## 2. Meeting 2
-* **Date:** November 6, 2026
+* **Date:** November 5, 2026
 * **Time:** 1:00 PM to 2:00 PM
 * **Attendees:** Naeema, Noora, Jude, Salman, Abdulla, Mariam
 * **Progress:** Naeema checked everyone's progress before our November 7 review. Jude and Salman had started their respective drafts. Mariam was designing the first two wireframe screens, and Abdulla was planning the sequence diagram flows. Noora checked what everyone needed to finish before the next meeting.
