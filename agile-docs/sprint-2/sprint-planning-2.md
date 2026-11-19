@@ -1,6 +1,6 @@
 # Sprint Planning Meeting 2 — Follow-Up & Progress Review
 
-**Date:** November 7, 2026
+**Date:** November 5, 2026
 **Time:** 12:20 PM to 1:20 PM
 **Location:** University Library Meeting Room (In Person)
 **Attendees:** Naeema, Noora, Jude, Salman, Abdulla, Mariam
