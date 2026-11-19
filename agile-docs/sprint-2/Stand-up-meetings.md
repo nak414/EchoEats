@@ -67,7 +67,7 @@
 * **Date:** November 17, 2026
 * **Time:** 1:00 PM to 2:00 PM
 * **Attendees:** Naeema, Noora, Jude, Salman, Abdulla, Mariam
-* **Progress:** Naeema started by reviewing the Sprint 1 task summary with everyone. All 18 tasks had moved to Done. Noora was organizing GitHub contributions and the final report, while Naeema had completed the agile meeting documentation and progress summary.
+* **Progress:** Naeema started by reviewing the Sprint 2 task summary with everyone. All 18 tasks had moved to Done. Noora was organizing GitHub contributions and the final report, while Naeema had completed the agile meeting documentation and progress summary.
 * **Blockers:** Our main concern was checking that nothing was missing from the final report.
 * **Decision:** We considered the planned Sprint 2 goal achieved. Our main concern was checking that nothing was missing from the final report, while agreeing that the final report still needed to be checked before submission.
 * **Action Items:** Noora would check the final PDF and GitHub contributions, Naeema would review the Jira evidence and Agile documentation, and everyone would check their own sections before submission.
