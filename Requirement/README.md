@@ -1,0 +1,1 @@
+Note on reservation hold time: Vendor/Detailed vendor requirements.pdf is an earlier version and still says 10 minutes (including FR-V18 and FR-V30). The agreed reservation hold is 15 minutes, as stated in Vendor/Vendor & Dynamic Pricing Requirements, the consumer requirements (FR-C24) and the implementation.
