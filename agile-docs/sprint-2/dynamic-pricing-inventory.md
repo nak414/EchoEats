@@ -66,6 +66,8 @@ The final price is restricted by the minimum and initial prices and cannot incre
 
 The Phase 1 requirement specifies price updates every 15–30 minutes. The current backend recalculates prices through a maintenance process that runs approximately every 5 seconds.
 
+To meet the original requirement, the backend should be changed so prices are recalculated only every 15-30 minutes per listing (using the existing last_price_update field). The 5-second maintenance loop should remain for reservation expiry only.
+
 The backend supports all three pricing methods, demand adjustments, and minimum-price protection. However, the update frequency should be aligned with the required 15–30-minute interval.
 
 Task 2 — UML Activity Diagram for Dynamic Pricing
@@ -234,7 +236,7 @@ Medium
 
 Reservation expiry and price updates follow consistent timing.
 
-Resolve the 10-minute and 15-minute requirement differences.
+Verify that the implementation consistently follows the agreed 15-minute reservation rule.
 
 Improve account security
 
